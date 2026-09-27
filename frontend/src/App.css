@@ -1,0 +1,29 @@
+/* Clear App.css defaults to avoid conflicts */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.spin {
+  animation: spin 1.2s linear infinite;
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease forwards;
+}
